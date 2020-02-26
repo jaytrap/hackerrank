@@ -19,4 +19,16 @@ class HackerRank
         $sum=$minVal." ".$maxVal;
         return $sum;
     }
+
+    function birthdayCakeCandles($ar) {
+        rsort($ar);
+        $sum = 0;
+        for($x = 0; $x< sizeof($ar)-1; $x++){
+            if($ar[0] == $ar[$x]){
+                $sum +=1;
+            }
+        }
+        return $sum;
+
+    }
 }
