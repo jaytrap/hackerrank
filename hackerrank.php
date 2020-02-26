@@ -23,12 +23,13 @@ class HackerRank
     function birthdayCakeCandles($ar) {
         rsort($ar);
         $sum = 0;
-        for($x = 0; $x< sizeof($ar)-1; $x++){
-            if($ar[0] == $ar[$x]){
-                $sum +=1;
-            }
+        $i = 0;
+        while(($i <= sizeof($ar)) && ($ar[0] == $ar[$i])){
+            $sum +=1;
+            $i +=1;
         }
         return $sum;
+
 
     }
 }
